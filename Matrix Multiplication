@@ -64,8 +64,24 @@ for(i=0; i<r2; i++)
 
 //done
 
-//matrix multiplicaion
+// square matrix multiplicaion
 
+if(r1=c1){
+for(i=0; i<r1; i++)
+{
+    for(j=0; j<c2; j++)
+    {
+        m[i][j] = 0;
+        for(k=0; k<c2; k++)
+        {
+            m[i][j] = m[i][j] + (a[i][k] * b[k][j]); 
+        }
+    }
+}
+}
+
+//if the matrix is not square
+if(r1!=c1){
 for(i=0; i<r1; i++)
 {
     for(j=0; j<c2; j++)
@@ -77,7 +93,7 @@ for(i=0; i<r1; i++)
         }
     }
 }
-
+}
 //dislay
 for(i=0; i<r1; i++)
 {
