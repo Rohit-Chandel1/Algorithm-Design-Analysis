@@ -18,9 +18,9 @@ public:
 
     // Function to construct and print the Minimum Spanning Tree
     void minimumSpanningTree(int graph[][5], int V) {
-        int parent[V]; // Array to store the parent of each vertex in MST
-        int key[V];    // Array to store key values used to pick minimum weight edge
-        bool mstSet[V];// Array to track vertices included in MST
+        int parent[V]; 
+        int key[V];    
+        bool mstSet[V];
 
         // Initialize key values as INFINITE, MST set as false, and parent as -1
         for (int i = 0; i < V; i++) {
@@ -65,7 +65,7 @@ int main() {
                        {0, 3, 0, 0, 7},
                        {6, 8, 0, 0, 9},
                        {0, 5, 7, 9, 0}};
-    int V = 5; // Number of vertices in the graph
-    t.minimumSpanningTree(graph, V); // Call the function to find and print the MST
+    int V = 5; 
+    t.minimumSpanningTree(graph, V); 
     return 0;
 }
